@@ -110,6 +110,6 @@
 	
 	<!-- Properties File Loader -->
 	<bean id="bridgePropertyPlaceholder" class="org.apache.camel.spring.spi.BridgePropertyPlaceholderConfigurer">
-		<property name="location" value="classpath:rest-service.properties" />
+		<property name="location" value="classpath:rest-handler.properties" />
 	</bean>
 </beans>
