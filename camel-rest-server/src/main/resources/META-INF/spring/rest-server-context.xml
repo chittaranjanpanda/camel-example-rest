@@ -39,6 +39,6 @@
 	<bean id="springPropertyPlaceholder" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="placeholderPrefix" value="[[" />
 		<property name="placeholderSuffix" value="]]" />
-		<property name="location" value="classpath:rest-route.properties" />
+		<property name="location" value="classpath:rest-server.properties" />
 	</bean>
 </beans>
