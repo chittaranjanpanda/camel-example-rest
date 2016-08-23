@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Configures the Camel Context -->
 
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="
@@ -23,7 +22,7 @@
 			<setHeader headerName="CamelHttpMethod">
 				<constant>GET</constant>
 			</setHeader>
-			<to uri="http://{{list.product.url}}" />
+			<to uri="http://localhost:{{rest.enpoint.port}}/{{rest.endpoint.name}}/product/list" />
 			<log message="Product List : ${body}" />
 		</route>
 		<route id="listCategory">
@@ -31,7 +30,7 @@
 			<setHeader headerName="CamelHttpMethod">
 				<constant>GET</constant>
 			</setHeader>
-			<to uri="http://{{list.category.url}}" />
+			<to uri="http://localhost:{{rest.enpoint.port}}/{{rest.endpoint.name}}/category/list" />
 			<log message="Category List : ${body}" />
 		</route>
 	</camelContext>
