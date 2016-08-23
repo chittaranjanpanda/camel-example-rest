@@ -1,7 +1,7 @@
 # camel-example-rest
 Restfull web service using Apache Camel, Apache CXF and Spring Data JPA
 
- - camel-rest-handler  :   Camel based crud route to handle request (Spring repositories, Pojo)
+  - camel-rest-handler  :   Camel based crud route to handle request (Spring repositories, Pojo)
   - camel-rest-server   :   Rest server routes
   - camel-rest-client   :   A sample project to request Rest Server
 
